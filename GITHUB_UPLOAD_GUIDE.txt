@@ -1,0 +1,18 @@
+WHAT TO UPLOAD TO https://github.com/yagmursertt/civic_fix_2
+
+1. Add README.md at the ROOT (GitHub shows it on the main page).
+2. Add requirements.txt at the ROOT.
+3. Add .gitignore at the ROOT (GitHub may hide dotfiles in your computer's file browser).
+4. Add DATA_AVAILABILITY.md at the ROOT.
+5. Replace the existing PPTX with CivicFix_Assignment2_FINAL_LINK_FIXED.pptx (rename back to CivicFix_Assignment2_FINAL.pptx upon upload).
+6. IMPORTANT: If keeping the presentation PDF in the repository, export the updated PPTX as CivicFix_Assignment2_FINAL.pdf, then replace its old version. Editing the PPTX alone does not update the PDF.
+7. Optionally set the repository About description to:
+   "CivicFix AI Assignment 2 — NYC complaint recurrence, Turkish complaint triage, and exploratory Istanbul GIS screening (SDG 11)."
+
+NOT INCLUDED / NOT MAGICALLY FIXED:
+- Original NYC 311 and NOAA raw datasets
+- Original DEM raster/OSM waterway geometry data
+- Actual leakage-safe NYC re-run and verified Istanbul prediction metrics
+- Independent Turkish label validation
+
+These require genuine source data and additional analysis. Do not invent them or claim they were run.
