@@ -1,0 +1,61 @@
+{
+  "generated_on": "2026-11-23",
+  "original_nyc_model": {
+    "model": "HistGradientBoostingClassifier",
+    "trained_per_supplied_run_analysis_py": true,
+    "new_training_run_completed": false,
+    "reported_metrics": {
+      "raw_records": 132648,
+      "clean_records": 132506,
+      "train_records": 76437,
+      "test_records": 27937,
+      "roc_auc": 0.6718706674117523,
+      "pr_auc": 0.5853340949038648,
+      "f1_at_05": 0.473658457021693,
+      "precision_top_decile": 0.7158196134574087,
+      "test_positive_rate": 0.3988617245946236
+    }
+  },
+  "istanbul_daily_rain_csv": {
+    "included": true,
+    "rows": 20,
+    "max_mm": 167.8,
+    "max_day": "2026-10-14"
+  },
+  "turkish_pilot": {
+    "source_csv_included": true,
+    "predictions_included": true,
+    "n": 25,
+    "provisional_agreement": 24,
+    "accuracy": 0.96,
+    "macro_f1": 0.971,
+    "labels_independent": false
+  },
+  "istanbul_gis": {
+    "visual_and_metadata_included": true,
+    "99_waterway_geometries": true,
+    "raw_dem_archive_included": false,
+    "osm_raw_geojson_included": false,
+    "calibrated_flood_probability": false
+  },
+  "file_presence": {
+    "nyc311_infra_2025.csv": "NOT included; missing original raw NYC export; dynamic NYC Open Data source available",
+    "nyc_centralpark_2025.csv": "NOT included in package; available at project GitHub repository; original version must be recovered",
+    "istanbul_daily_rain_oct2026.csv": "included; recovered from prior user-uploaded Library file",
+    "rasters_COP30.tar": "NOT included; missing source raster archive",
+    "waterways.geojson": "NOT included; missing 99 raw OSM geometry objects",
+    "turkish_complaints_25_anonymized.csv": "included",
+    "gpt6_pilot_predictions_25.csv": "included",
+    "results_legacy.json": "included; supplied historical result summary",
+    "run_analysis_leakage_checked.py": "included; source code tested on generated smoke-test inputs only, not original NYC data"
+  },
+  "known_method_risks": [
+    "Cross-cutoff training labels may use September observations",
+    "Same-day rain may be unknown at complaint arrival",
+    "No independent Turkish reference labels or blind test",
+    "No measured Istanbul flood labels for testing",
+    "No geospatial co-location between Istanbul rain coordinate and raster subset",
+    "Public GitHub README describes 132653 NYC source rows while supplied historical results describe 132648; they are not certified as the same extraction"
+  ],
+  "evaluation_status": "Legacy metrics are historical and not fully leakage-free; new prospective scores require rerun with original raw inputs"
+}
